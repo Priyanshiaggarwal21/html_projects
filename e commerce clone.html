@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">MYNTRA</div>
+        <nav>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home</a>
+            <a href="#">Beauty</a>
+        </nav>
+        <div class="cart">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Big Fashion Sale</h1>
+        <p>Up to 70% OFF</p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Men T-Shirt</h3>
+            <p>₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Women Dress</h3>
+            <p>₹1499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Shoes</h3>
+            <p>₹1999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Handbag</h3>
+            <p>₹1299</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <script>
+        let count = 0;
+
+        function addToCart() {
+            count++;
+            document.getElementById("cart-count").innerText = count;
+            alert("Product Added to Cart!");
+        }
+    </script>
+
+</body>
+</html>
+<style class="css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f6;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff3f6c;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ff3f6c;
+}
+
+.cart {
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to right, #ff3f6c, #ff9068);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 40px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 50px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-weight: bold;
+    color: #ff3f6c;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff3f6c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #e7335c;
+}
+</style>
