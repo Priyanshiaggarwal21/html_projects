@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<div class="weather-container">
+    <h2>Weather App</h2>
+
+    <input type="text" placeholder="Enter city name">
+    <button>Search</button>
+
+    <div class="weather-info">
+        <h3>Delhi</h3>
+        <p class="temp">28°C</p>
+        <p>Sunny</p>
+        <p>Humidity: 60%</p>
+        <p>Wind Speed: 10 km/h</p>
+    </div>
+</div>
+
+</body>
+</html>
+<style class="css">
+    body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    text-align: center;
+}
+
+.weather-container {
+    background: white;
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 8px;
+    width: 70%;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: bold;
+}
+</style>
