@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Room Booking Form</title>
+</head>
+<body>
+<h1 align="center">Hotel Room Booking Form</h1>
+<form action="#" method="post" align="center">
+<!-- Name -->
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" name="fullname" required>
+<br><br>
+<!-- Identity Proof -->
+<label for="identity">Proof of Identity:</label>
+<select id="identity" name="identity">
+<option value="pan">PAN CARD</option>
+<option value="aadhar">AADHAR CARD</option>
+<option value="passport">PASSPORT</option>
+<option value="driving">DRIVING LICENSE</option>
+</select>
+<br><br>
+<!-- Email -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br><br>
+<!-- Phone -->
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" required>
+<br><br>
+<!-- Check-in & Check-out -->
+<label for="checkin">Check-in Date:</label>
+<input type="date" id="checkin" name="checkin">
+<br><br>
+<label for="checkout">Check-out Date:</label>
+<input type="date" id="checkout" name="checkout">
+<br><br>
+<!-- Room Type -->
+<label for="room">Room Type:</label>
+<select id="room" name="room">
+<option value="single">Single Room</option>
+<option value="double">Double Room</option>
+<option value="deluxe">Deluxe Room</option>
+<option value="suite">Suite</option>
+</select>
+<br><br>
+<!--Price Per Day-->
+<label  for="price">Price Per Day:</label>
+<select id="price" name="price">
+<option value="single">Single Room - ₹1200</option>
+<option value="double">Double Room - ₹1800</option>
+<option value="deluxe">Delux Room - ₹3000</option>
+<option value="suite">Suite - ₹5000</option>
+</select>
+<br><br>
+<!-- Number of Adults -->
+<label for="adults">Number of Adults:</label>
+<input type="number" id="adults" name="adults" min="1" max="10">
+<br><br>
+<!-- Number of Children -->
+<label for="children">Number of Children:</label>
+<input type="number" id="children" name="children" min="1" max="10">
+<br><br>
+<!-- Special Requests -->
+<label for="requests">Special Requests:</label><br>
+<textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+<br><br>
+<!-- Buttons -->
+<input type="submit" value="Book Now">
+<input type="reset" value="Reset Form">
+</form>
+</body>
+</html>
