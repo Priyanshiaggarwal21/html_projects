@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h2>Simple Quiz</h2>
+        <div id="question">Question Text</div>
+
+        <div class="options">
+            <button class="option" onclick="checkAnswer(0)">Option 1</button>
+            <button class="option" onclick="checkAnswer(1)">Option 2</button>
+            <button class="option" onclick="checkAnswer(2)">Option 3</button>
+            <button class="option" onclick="checkAnswer(3)">Option 4</button>
+        </div>
+
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+<style class="css">
+    body {
+    font-family: Arial;
+    background: #4facfe;
+    text-align: center;
+}
+
+.quiz-container {
+    background: white;
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#nextBtn {
+    padding: 10px 20px;
+}
+</style>
